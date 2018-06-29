@@ -1,0 +1,11 @@
+--- a/src/Gtk/TermBox.vala	2018-06-29 08:38:28.356173388 +0200
++++ b/src/Gtk/TermBox.vala	2018-06-29 11:08:11.722601374 +0200
+@@ -249,7 +249,7 @@
+ 			cmd = "%s\n".printf(cmd);
+ 		}
+ 		
+-		term.feed_child(cmd, -1);
++		term.feed_child(cmd.to_utf8());
+ 	}
+ 
+ 	public void refresh(){
