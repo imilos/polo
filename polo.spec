@@ -34,14 +34,12 @@ rm %{buildroot}%{_bindir}/polo-uninstall
 
 %files
 %{_bindir}/gtk3-version-polo
-%{_bindir}/polo-chroot
 %{_bindir}/polo-gtk
 %{_datarootdir}/applications/polo-gtk.desktop
 %{_datarootdir}/appdata/polo-gtk.appdata.xml
 %{_datarootdir}/locale/**/LC_MESSAGES/polo.mo
 %{_datarootdir}/pixmaps/polo.png
 %{_datarootdir}/polo/*
-
 
 %changelog
 * Thu Jun 28 2018 <imilos@gmail.com> 18-6beta
