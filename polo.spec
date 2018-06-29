@@ -33,7 +33,7 @@ chrpath --delete %{buildroot}%{_bindir}/polo-gtk
 rm %{buildroot}%{_bindir}/polo-uninstall
 
 %files
-%{_bindir}/gtk3-version-polo
+##%{_bindir}/gtk3-version-polo
 %{_bindir}/polo-gtk
 %{_datarootdir}/applications/polo-gtk.desktop
 %{_datarootdir}/appdata/polo-gtk.appdata.xml
