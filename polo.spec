@@ -35,6 +35,8 @@ rm %{buildroot}%{_bindir}/polo-uninstall
 %files
 ##%{_bindir}/gtk3-version-polo
 %{_bindir}/polo-gtk
+%{_bindir}/polo-disk
+%{_bindir}/polo-gtk3-helper
 %{_datarootdir}/applications/polo-gtk.desktop
 %{_datarootdir}/appdata/polo-gtk.appdata.xml
 %{_datarootdir}/locale/**/LC_MESSAGES/polo.mo
