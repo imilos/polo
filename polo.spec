@@ -11,7 +11,10 @@ License:        LGPLv3+
 URL:            https://github.com/imilos/%{name}
 Source0:        https://github.com/teejee2008/%{name}/archive/v%{vermaj}.%{vermin}.tar.gz
 #Source0:        https://imi.pmf.kg.ac.rs/~milos/polo-%{vermaj}.%{vermin}.tar.gz
+
+%if %{?fedora}%{!?fedora:0} >= 28
 Patch0:         vala40.patch
+%endif
 
 BuildRequires:  vala, vte291-devel, libgee-devel, json-glib-devel, libxml2-devel, chrpath, gettext
 Requires:       libgee, vte291, json-glib, libxml2, libmediainfo, rsync, pv, p7zip, p7zip-plugins, tar, gzip, bzip2, xz, fish, qemu-kvm, qemu-img, gvfs, rclone, libsoup
