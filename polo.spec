@@ -1,10 +1,10 @@
 %define vermaj 18
-%define vermin 6-beta
+%define vermin 8-beta
 %define debug_package %{nil}
 
 Name:           polo
 Version:        %{vermaj}
-Release:        6_beta%{?dist}
+Release:        8_beta%{?dist}
 Summary:        Advanced file manager for Linux written in Vala.
 
 License:        LGPLv3+
@@ -48,6 +48,8 @@ rm %{buildroot}%{_bindir}/polo-uninstall
 %{_datarootdir}/polo/*
 
 %changelog
+* Sun Aug 12 2018 <imilos@gmail.com> 18-8beta
+- Update to 18.8 beta
 * Thu Jun 28 2018 <imilos@gmail.com> 18-6beta
 - Update to 18.6 beta
 * Tue Jan 30 2018 <grturner@5x5code.com> 18-1beta
